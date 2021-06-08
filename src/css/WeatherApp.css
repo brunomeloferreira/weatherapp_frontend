@@ -1,0 +1,44 @@
+.background {
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.form {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  border-color: #d2d2d2;
+  border-width: 7px;
+  box-shadow: 0 1px 0 #cfcfcf;
+  margin-top: -10%;
+  text-align: center;
+}
+
+.icon-temp {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-wind {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-humidity {
+  width: 40px;
+  height: 40px;
+}
+
+.text-size {
+  font-size: 30px;
+}
