@@ -1,4 +1,4 @@
-import { useState , useEffect} from 'react';
+import { useState } from 'react';
 import Axios from 'axios';
 
 import WeatherApp from '../components/WeatherApp'
@@ -9,9 +9,6 @@ export default function WeatherAppContainer() {
 
     const [city, setCity] = useState([]);
 
-    useEffect(() => {
-        getWeather();
-    }, []);
 
 
     const getWeather = (name) => {
@@ -24,6 +21,7 @@ export default function WeatherAppContainer() {
                 console.log(data)
                 setCity(data.data)
             })
+            .catch(error => console.log("database server offline"));    
     }
 
 
